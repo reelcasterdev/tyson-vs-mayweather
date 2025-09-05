@@ -2,7 +2,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
-import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
 import { Calendar, Trophy, Users, TrendingUp, Clock, AlertCircle, Star, DollarSign, Activity, Award, Zap, Target, Shield, Swords, TrendingDown } from "lucide-react";
 
@@ -261,20 +260,18 @@ export default function Home() {
               <CardDescription className="text-zinc-400">Professional predictions</CardDescription>
             </CardHeader>
             <CardContent>
-              <ScrollArea className="h-[250px]">
-                <div className="space-y-3">
-                  {bettingData.expertPredictions.map((pred, index) => (
-                    <div key={index} className="p-3 bg-zinc-900/50 rounded-lg">
-                      <div className="flex justify-between items-start mb-1">
-                        <span className="font-semibold text-white text-sm">{pred.expert}</span>
-                        <Badge variant="outline" className="text-xs">{pred.confidence}</Badge>
-                      </div>
-                      <p className="text-yellow-400 text-sm mb-1">{pred.prediction}</p>
-                      <p className="text-zinc-500 text-xs">{pred.reasoning}</p>
+              <div className="space-y-3">
+                {bettingData.expertPredictions.map((pred, index) => (
+                  <div key={index} className="p-3 bg-zinc-900/50 rounded-lg">
+                    <div className="flex justify-between items-start mb-1">
+                      <span className="font-semibold text-white text-sm">{pred.expert}</span>
+                      <Badge variant="outline" className="text-xs">{pred.confidence}</Badge>
                     </div>
-                  ))}
-                </div>
-              </ScrollArea>
+                    <p className="text-yellow-400 text-sm mb-1">{pred.prediction}</p>
+                    <p className="text-zinc-500 text-xs">{pred.reasoning}</p>
+                  </div>
+                ))}
+              </div>
             </CardContent>
           </Card>
         </div>
