@@ -1,0 +1,176 @@
+export const newsArticles = [
+  {
+    id: 1,
+    title: "Boxing Legends Agree to Historic Exhibition Match",
+    source: "ESPN",
+    date: "September 4, 2025",
+    category: "Breaking News",
+    content: "Mike Tyson and Floyd Mayweather Jr. have officially agreed to compete in an exhibition match in spring 2026. The event will be organized by CSI Sports/Fight Sports.",
+    featured: true,
+  },
+  {
+    id: 2,
+    title: "Tyson: 'It's Going to Be Detrimental to His Health'",
+    source: "Sky Sports",
+    date: "September 4, 2025",
+    category: "Fighter Statement",
+    content: "Mike Tyson expressed surprise that Floyd Mayweather agreed to the fight, warning it could be 'detrimental to his health' while confirming the match is signed and happening.",
+    featured: false,
+  },
+  {
+    id: 3,
+    title: "Mayweather Confident: 'No Fighter Can Tarnish My Legacy'",
+    source: "CBS Sports",
+    date: "September 5, 2025",
+    category: "Fighter Statement",
+    content: "Floyd Mayweather remains undefeated in confidence, stating that after 30 years in boxing, no fighter can tarnish his perfect 50-0 legacy.",
+    featured: false,
+  },
+  {
+    id: 4,
+    title: "Exhibition Set to Break All Streaming Records",
+    source: "TMZ Sports",
+    date: "September 5, 2025",
+    category: "Business",
+    content: "Promoters predict the Tyson vs Mayweather exhibition will break all broadcast, streaming and economic records set by Mike Tyson's fight with Jake Paul in 2024.",
+    featured: false,
+  },
+  {
+    id: 5,
+    title: "Weight Class Differences Present Unique Challenge",
+    source: "Boxing News 24",
+    date: "September 5, 2025",
+    category: "Analysis",
+    content: "With Mayweather traditionally fighting at middleweight (147-154 lbs) and Tyson as a heavyweight, the weight difference presents an intriguing dynamic for the exhibition.",
+    featured: false,
+  },
+  {
+    id: 6,
+    title: "Location and Broadcast Details Still Under Wraps",
+    source: "CNN Sports",
+    date: "September 5, 2025",
+    category: "Updates",
+    content: "While the fight is confirmed for spring 2026, the exact date, venue, and broadcast platform remain to be announced by CSI Sports/Fight Sports.",
+    featured: false,
+  },
+  {
+    id: 7,
+    title: "Multi-Platform Broadcast Deal Expected",
+    source: "Yahoo Sports",
+    date: "September 6, 2025",
+    category: "Business",
+    content: "CSI Sports plans global multi-platform coverage with world-class venues under consideration. Weekly premium content planned leading up to the fight.",
+    featured: false,
+  },
+  {
+    id: 8,
+    title: "31-Year Age Gap Sets Boxing Record",
+    source: "The Manila Times",
+    date: "September 6, 2025",
+    category: "Record",
+    content: "The 31-year age difference between Tyson (59) and Paul was already historic. The 11-year gap with Mayweather (48) continues the trend of cross-generational exhibitions.",
+    featured: false,
+  },
+  {
+    id: 9,
+    title: "Exhibition Rules to Be Announced",
+    source: "Revolt TV",
+    date: "September 5, 2025",
+    category: "Rules",
+    content: "Details regarding number of rounds, glove weight, and specific rules will be revealed at a later date. Exhibition format means no official records affected.",
+    featured: false,
+  },
+];
+
+export const fighterStats = {
+  tyson: {
+    name: "Mike Tyson",
+    nickname: "Iron Mike",
+    age: 59,
+    record: "50-6",
+    height: "5'10\"",
+    reach: "71\"",
+    stance: "Orthodox",
+    lastFight: "vs Jake Paul (2024)",
+    weight: "228.4 lbs",
+    ko: 44,
+  },
+  mayweather: {
+    name: "Floyd Mayweather Jr.",
+    nickname: "Money",
+    age: 48,
+    record: "50-0",
+    height: "5'8\"",
+    reach: "72\"",
+    stance: "Orthodox",
+    lastFight: "vs John Gotti III (2024)",
+    weight: "160.8 lbs",
+    ko: 27,
+  },
+};
+
+export const bettingData = {
+  mayweatherOdds: "-500",
+  tysonOdds: "+350",
+  fightHappensOdds: "-150",
+  fightCancelledOdds: "+110",
+  expertPredictions: [
+    {
+      expert: "USA TODAY Sports",
+      prediction: "Mayweather by Split Decision",
+      confidence: "75%",
+      reasoning: "Age advantage and defensive mastery",
+    },
+    {
+      expert: "Josh Peter",
+      prediction: "Mayweather -140",
+      confidence: "65%",
+      reasoning: "Tyson's performance vs Paul concerning",
+    },
+    {
+      expert: "BetOnline",
+      prediction: "Mayweather Heavy Favorite",
+      confidence: "83%",
+      reasoning: "11-year age gap is significant",
+    },
+  ],
+};
+
+export const careerHighlights = {
+  tyson: [
+    { year: "1986", achievement: "Youngest Heavyweight Champion (20 years old)" },
+    { year: "1987", achievement: "Unified WBA, WBC, IBF titles" },
+    { year: "1996", achievement: "Regained WBA & WBC titles" },
+    { year: "2020", achievement: "Exhibition vs Roy Jones Jr." },
+    { year: "2024", achievement: "Netflix record 65M viewers vs Jake Paul" },
+  ],
+  mayweather: [
+    { year: "1996", achievement: "Olympic Bronze Medal" },
+    { year: "1998", achievement: "First World Title (Super Featherweight)" },
+    { year: "2007", achievement: "Defeated Oscar De La Hoya" },
+    { year: "2015", achievement: "Defeated Manny Pacquiao" },
+    { year: "2017", achievement: "TKO Conor McGregor (50-0 record)" },
+  ],
+};
+
+export const fightAnalysis = {
+  tysonAdvantages: [
+    "Heavyweight power - 44 career knockouts",
+    "Intimidation factor and ring presence",
+    "Experience in exhibition format",
+    "Nothing to lose mentality",
+  ],
+  mayweatherAdvantages: [
+    "11 years younger (48 vs 59)",
+    "Undefeated record (50-0)",
+    "Superior defensive skills",
+    "Better recent conditioning",
+    "Less damage taken in career",
+  ],
+  keyFactors: [
+    "68-pound weight difference",
+    "Exhibition rules yet to be determined",
+    "Both fighters may not go for KO",
+    "Entertainment over competition focus",
+  ],
+};
