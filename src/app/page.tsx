@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
-import { Calendar, MapPin, Trophy, Users, TrendingUp, Clock, AlertCircle, Star, DollarSign, Activity, Award, Zap, Target, Shield, Swords, TrendingDown } from "lucide-react";
+import { Calendar, Trophy, Users, TrendingUp, Clock, AlertCircle, Star, DollarSign, Activity, Award, Zap, Target, Shield, Swords, TrendingDown } from "lucide-react";
 
 const newsArticles = [
   {
@@ -293,7 +293,7 @@ export default function Home() {
                 <AvatarFallback className="bg-red-600 text-white text-2xl font-bold">MT</AvatarFallback>
               </Avatar>
               <CardTitle className="text-2xl text-white">{fighterStats.tyson.name}</CardTitle>
-              <CardDescription className="text-red-400">"{fighterStats.tyson.nickname}"</CardDescription>
+              <CardDescription className="text-red-400">&quot;{fighterStats.tyson.nickname}&quot;</CardDescription>
             </CardHeader>
             <CardContent>
               <div className="space-y-3 text-zinc-300">
@@ -337,7 +337,7 @@ export default function Home() {
                 <AvatarFallback className="bg-yellow-600 text-white text-2xl font-bold">FM</AvatarFallback>
               </Avatar>
               <CardTitle className="text-2xl text-white">{fighterStats.mayweather.name}</CardTitle>
-              <CardDescription className="text-yellow-400">"{fighterStats.mayweather.nickname}"</CardDescription>
+              <CardDescription className="text-yellow-400">&quot;{fighterStats.mayweather.nickname}&quot;</CardDescription>
             </CardHeader>
             <CardContent>
               <div className="space-y-3 text-zinc-300">
@@ -386,7 +386,7 @@ export default function Home() {
             <CardHeader>
               <CardTitle className="text-xl text-white flex items-center">
                 <Zap className="mr-2 h-5 w-5 text-red-500" />
-                Tyson's Advantages
+                Tyson&apos;s Advantages
               </CardTitle>
             </CardHeader>
             <CardContent>
@@ -406,7 +406,7 @@ export default function Home() {
             <CardHeader>
               <CardTitle className="text-xl text-white flex items-center">
                 <Shield className="mr-2 h-5 w-5 text-yellow-500" />
-                Mayweather's Advantages
+                Mayweather&apos;s Advantages
               </CardTitle>
             </CardHeader>
             <CardContent>
@@ -453,7 +453,7 @@ export default function Home() {
             <CardHeader>
               <CardTitle className="text-xl text-white flex items-center">
                 <Award className="mr-2 h-5 w-5 text-red-500" />
-                Mike Tyson's Journey
+                Mike Tyson&apos;s Journey
               </CardTitle>
             </CardHeader>
             <CardContent>
@@ -473,7 +473,7 @@ export default function Home() {
             <CardHeader>
               <CardTitle className="text-xl text-white flex items-center">
                 <Trophy className="mr-2 h-5 w-5 text-yellow-500" />
-                Floyd Mayweather's Legacy
+                Floyd Mayweather&apos;s Legacy
               </CardTitle>
             </CardHeader>
             <CardContent>
@@ -496,7 +496,7 @@ export default function Home() {
           <CardHeader>
             <CardTitle className="text-2xl text-white flex items-center">
               <Activity className="mr-3 h-6 w-6 text-red-500" />
-              Tyson's Last Fight Analysis - vs Jake Paul (Nov 2024)
+              Tyson&apos;s Last Fight Analysis - vs Jake Paul (Nov 2024)
             </CardTitle>
             <CardDescription className="text-zinc-400">
               Performance concerns that could impact the Mayweather bout
@@ -528,7 +528,7 @@ export default function Home() {
                     <span className="text-green-400 font-semibold">65M viewers</span>
                   </div>
                   <div className="flex justify-between p-2 bg-zinc-900/50 rounded">
-                    <span className="text-zinc-400">Tyson's Weight</span>
+                    <span className="text-zinc-400">Tyson&apos;s Weight</span>
                     <span className="text-zinc-300 font-semibold">228.4 lbs</span>
                   </div>
                   <div className="flex justify-between p-2 bg-zinc-900/50 rounded">
@@ -544,7 +544,7 @@ export default function Home() {
             </div>
             <Separator className="bg-zinc-800 my-4" />
             <p className="text-zinc-400 text-sm italic">
-              "I didn't prove nothing to anybody, only to myself" - Mike Tyson post-fight
+              &quot;I didn&apos;t prove nothing to anybody, only to myself&quot; - Mike Tyson post-fight
             </p>
           </CardContent>
         </Card>
@@ -636,7 +636,7 @@ export default function Home() {
         <Card className="bg-gradient-to-r from-red-950 to-yellow-950 border-none max-w-3xl mx-auto">
           <CardContent className="p-8 text-center">
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
-              Don't Miss This Historic Event
+              Don&apos;t Miss This Historic Event
             </h3>
             <p className="text-zinc-300 mb-6">
               Be the first to know when tickets go on sale and get exclusive updates about the fight.
